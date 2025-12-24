@@ -25,7 +25,8 @@ class CatalogVariant extends Resource
         'updated_at',
         'created_at',
         'available_places',
-        'currency'
+        'currency',
+        'properties',
     ];
 
     protected string $endpoint = 'catalog/variants';

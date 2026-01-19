@@ -1,5 +1,33 @@
 # Changelog
 
+## [2.0.0](https://github.com/Eduframe/eduframe-php-client/compare/v1.4.0...v2.0.0) (2026-01-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Require minimal php 8.1 version
+* Update guzzle requirement to ^7.5
+
+### Features
+
+* Add sku field to CatalogVariant ([08ccb52](https://github.com/Eduframe/eduframe-php-client/commit/08ccb5217812b515b56d816904ba1410e20e07fa))
+* Enable signup_url in CatalogProduct ([b0d6e67](https://github.com/Eduframe/eduframe-php-client/commit/b0d6e671a63b1b8e6688a5b3b5b31e365f7d75ef))
+* Retrieve properties attribute of catalog variants ([6a2c1e9](https://github.com/Eduframe/eduframe-php-client/commit/6a2c1e916e218ae7db1b8e8aea5a13d3bf10b3f8))
+
+
+### Bug Fixes
+
+* Add type to $fillable ([59407b9](https://github.com/Eduframe/eduframe-php-client/commit/59407b990cf0f2c0fffe41b5ebc9ce4fafdf76ae))
+* Handle return types when deleting objects ([52a6beb](https://github.com/Eduframe/eduframe-php-client/commit/52a6beb28f1b31cb7d27655e408be193cc3a6519))
+* Loading of nested items ([120749e](https://github.com/Eduframe/eduframe-php-client/commit/120749e86604c91b9a32fde1313ffefc46b6598f))
+
+
+### Miscellaneous Chores
+
+* Add field to Address resource ([a9243fe](https://github.com/Eduframe/eduframe-php-client/commit/a9243fe9908e76168b6db7a300c53287fcce82e3))
+* Require minimal php 8.1 version ([a87ae4c](https://github.com/Eduframe/eduframe-php-client/commit/a87ae4c4d8e4128a50404c1c432e0efcbeafce65))
+* Update guzzle requirement to ^7.5 ([8e1cab6](https://github.com/Eduframe/eduframe-php-client/commit/8e1cab6662d91439d9ed2495563767f39a6e54d8))
+
 ## [1.4.0](https://github.com/Drieam/eduframe-php-client/compare/v1.3.1...v1.4.0) (2024-07-08)
 
 

@@ -6,10 +6,11 @@ use Eduframe\Resource;
 use Eduframe\Traits\FindAll;
 use Eduframe\Traits\FindOne;
 use Eduframe\Traits\Storable;
+use Eduframe\Traits\Removable;
 
 class Lead extends Resource
 {
-    use FindAll, FindOne, Storable;
+    use FindAll, FindOne, Removable, Storable;
 
     protected array $fillable = [
         'id',

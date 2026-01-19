@@ -10,7 +10,7 @@ class Teacher extends Resource
 {
     use FindAll, FindOne;
 
-    protected $fillable = [
+    protected array $fillable = [
         'id',
         'first_name',
         'middle_name',

@@ -191,7 +191,7 @@ class Connection
      * @throws ApiException
      * @throws GuzzleException
      */
-    public function delete(string $url, ?string $body = null): array {
+    public function delete(string $url, ?string $body = null): array|null {
         try {
             $request  = $this->createRequestNoJson('DELETE', $this->formatUrl($url, 'delete'), $body);
             $response = $this->client()->send($request);
@@ -225,7 +225,7 @@ class Connection
     /**
      * @throws ApiException
      */
-    private function parseResponse(Response $response): array {
+    private function parseResponse(Response $response): array|null {
         try {
             Psr7\Message::rewindBody($response);
             return json_decode($response->getBody()->getContents(), true);

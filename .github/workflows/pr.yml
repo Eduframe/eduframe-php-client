@@ -1,0 +1,37 @@
+name: PR workflow
+
+on: [pull_request]
+
+concurrency:
+  group: pr-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  linters:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Run composer install
+        uses: php-actions/composer@v6
+        with:
+          php_version: 8.1
+
+      - name: Run PHP linters
+        run: vendor/bin/phpcs -s -p -n --ignore=*/vendor/* --extensions=php
+
+  success:
+    runs-on: ubuntu-24.04
+    needs:
+      - linters
+    if: ${{ always() }}
+    steps:
+      - id: success
+        if: ${{ !contains(needs.*.result, 'failure') && !contains(needs.*.result, 'cancelled') && !contains(needs.*.result, 'skipped') }}
+        name: Success
+        run: echo Success!
+
+      - if: ${{ steps.success.outcome == 'skipped' }}
+        name: Failure
+        run: exit 1

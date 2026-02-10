@@ -1,7 +1,12 @@
 name: Publish
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
 
 jobs:
   publish:
@@ -12,10 +17,17 @@ jobs:
       PACKAGE_NAME: "eduframe-php-client"
 
     steps:
-    - uses: google-github-actions/release-please-action@v3
-      id: release
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        release-type: php
-        package-name: ${{ env.PACKAGE_NAME }}
-        version-file: "composer.json"
+      - name: Get token from DrieamBot App
+        uses: actions/create-github-app-token@v2
+        id: app-token
+        with:
+          app-id: ${{ vars.DRIEAMBOT_APP_ID }}
+          private-key: ${{ secrets.DRIEAMBOT_APP_KEY }}
+
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          release-type: php
+          package-name: ${{ env.PACKAGE_NAME }}
+          version-file: "composer.json"

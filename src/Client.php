@@ -26,6 +26,7 @@ use Eduframe\Resources\SignupQuestion;
 use Eduframe\Resources\Teacher;
 use Eduframe\Resources\CatalogProduct;
 use Eduframe\Resources\CatalogVariant;
+use Eduframe\Resources\CourseTab;
 
 class Client
 {
@@ -130,6 +131,10 @@ class Client
 
     public function catalog_variants(array $attributes = []): CatalogVariant {
         return new CatalogVariant($this->connection, $attributes);
+    }
+
+    public function course_tabs(array $attributes = []): CourseTab {
+        return new CourseTab($this->connection, $attributes);
     }
 
     public function getConnection(): Connection {

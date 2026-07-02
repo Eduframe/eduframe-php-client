@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/Eduframe/eduframe-php-client/compare/v2.0.0...v2.1.0) (2026-07-02)
+
+
+### Features
+
+* Add course_tabs endpoint support ([0b31c26](https://github.com/Eduframe/eduframe-php-client/commit/0b31c261db16a880af5d036b64f0702b29cdf347))
+
 ## [2.0.0](https://github.com/Eduframe/eduframe-php-client/compare/v1.4.0...v2.0.0) (2026-01-19)
 
 

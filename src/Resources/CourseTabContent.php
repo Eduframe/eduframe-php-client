@@ -8,6 +8,8 @@ class CourseTabContent extends Resource
 {
 
     protected array $fillable = [
+        'id',
+        'course_tab_id',
         'content',
         'course_tab'
     ];

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/Eduframe/eduframe-php-client/compare/v2.1.0...v2.1.1) (2026-07-14)
+
+
+### Bug Fixes
+
+* expose id and course_tab_id on CourseTabContent ([9dca9b7](https://github.com/Eduframe/eduframe-php-client/commit/9dca9b71de3c811504ed788b9954a2f6022689e4))
+
 ## [2.1.0](https://github.com/Eduframe/eduframe-php-client/compare/v2.0.0...v2.1.0) (2026-07-02)
 
 

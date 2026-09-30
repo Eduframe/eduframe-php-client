@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/Eduframe/eduframe-php-client/compare/v2.1.1...v2.2.0) (2026-09-30)
+
+
+### Features
+
+* expose status attribute on Meeting ([abd4d04](https://github.com/Eduframe/eduframe-php-client/commit/abd4d0461c8ce9a7289f58a3a6d88edd438625c8))
+
 ## [2.1.1](https://github.com/Eduframe/eduframe-php-client/compare/v2.1.0...v2.1.1) (2026-07-14)
 
 

@@ -55,6 +55,9 @@ $courses_with_tabs = $client->courses()->all(['include' => 'course_tab_contents.
 // Example: Fetch list of planned courses with meetings
 $planned_courses = $client->planned_courses()->all(['include' => 'meetings']);
 
+// Example: Fetch only published meetings
+$published_meetings = $client->meetings()->all(['status' => 'published']);
+
 // Example: Fetch a single planned course by id
 $planned_course = $client->planned_courses()->find(123456789);
 

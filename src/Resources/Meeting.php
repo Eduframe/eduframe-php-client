@@ -17,6 +17,7 @@ class Meeting extends Resource
         'description',
         'description_dashboard',
         'meeting_location_id',
+        'status',
         'start_date_time',
         'end_date_time',
         'updated_at',

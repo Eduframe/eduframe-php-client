@@ -22,6 +22,7 @@ class Teacher extends Resource
         'employee_number',
         'slug',
         'avatar_url',
+        'active',
         'labels',
         'signup_answers',
         'custom',

@@ -24,6 +24,7 @@ use Eduframe\Resources\Program;
 use Eduframe\Resources\Referral;
 use Eduframe\Resources\SignupQuestion;
 use Eduframe\Resources\Teacher;
+use Eduframe\Resources\TeacherEnrollment;
 use Eduframe\Resources\CatalogProduct;
 use Eduframe\Resources\CatalogVariant;
 use Eduframe\Resources\CourseTab;
@@ -123,6 +124,10 @@ class Client
 
     public function teachers(array $attributes = []): Teacher {
         return new Teacher($this->connection, $attributes);
+    }
+
+    public function teacher_enrollments(array $attributes = []): TeacherEnrollment {
+        return new TeacherEnrollment($this->connection, $attributes);
     }
 
     public function catalog_products(array $attributes = []): CatalogProduct {

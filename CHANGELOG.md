@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.0](https://github.com/Eduframe/eduframe-php-client/compare/v2.2.0...v2.3.0) (2026-11-05)
+
+
+### Features
+
+* Add teacher_enrollments endpoint support ([0ee9eb8](https://github.com/Eduframe/eduframe-php-client/commit/0ee9eb8eb4e804e9f7e8dd493a462d635443beba))
+
+
+### Bug Fixes
+
+* expose active attribute on Teacher ([0937fcc](https://github.com/Eduframe/eduframe-php-client/commit/0937fcc7e1085bf9c2c89296faba234022dc461b))
+
 ## [2.2.0](https://github.com/Eduframe/eduframe-php-client/compare/v2.1.1...v2.2.0) (2026-09-30)
 
 

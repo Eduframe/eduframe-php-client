@@ -61,6 +61,9 @@ $published_meetings = $client->meetings()->all(['status' => 'published']);
 // Example: Fetch a single planned course by id
 $planned_course = $client->planned_courses()->find(123456789);
 
+// Example: Fetch the teacher enrollments of a planned course, including the teachers
+$teacher_enrollments = $client->teacher_enrollments()->forPlannedCourse(123456789)->all(['include' => 'teacher']);
+
 // Example: Create a lead
 $lead = $client->leads();
 $lead->company_name = 'Drieam';

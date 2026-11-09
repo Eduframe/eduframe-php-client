@@ -11,6 +11,7 @@ class Address extends Resource
         'addressee',
         'address',
         'address_line2',
+        'state_province',
         'postal_code',
         'city',
         'country',

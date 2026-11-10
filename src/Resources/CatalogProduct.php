@@ -23,6 +23,7 @@ class CatalogProduct extends Resource
         'cost',
         'position',
         'avatar',
+        'image_url',
         'conditions_or_default',
         'currency',
         'course_tab_contents',

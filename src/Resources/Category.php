@@ -17,6 +17,7 @@ class Category extends Resource
         'position',
         'description',
         'avatar',
+        'image_url',
         'meta_title',
         'meta_description',
         'parent_id',

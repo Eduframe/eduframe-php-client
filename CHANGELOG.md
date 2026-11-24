@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/Eduframe/eduframe-php-client/compare/v2.3.0...v2.3.1) (2026-11-24)
+
+
+### Bug Fixes
+
+* expose state_province attribute on Address ([751d30f](https://github.com/Eduframe/eduframe-php-client/commit/751d30fd3547b6cf2c368ee0818ddc0c71a67c4b))
+
 ## [2.3.0](https://github.com/Eduframe/eduframe-php-client/compare/v2.2.0...v2.3.0) (2026-11-05)
 
 
